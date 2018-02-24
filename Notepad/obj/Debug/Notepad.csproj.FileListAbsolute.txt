@@ -7,3 +7,12 @@ C:\Users\bcs2\Desktop\SC9527_CSC2143\Notepad\Notepad\obj\Debug\Notepad.Propertie
 C:\Users\bcs2\Desktop\SC9527_CSC2143\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache
 C:\Users\bcs2\Desktop\SC9527_CSC2143\Notepad\Notepad\obj\Debug\Notepad.exe
 C:\Users\bcs2\Desktop\SC9527_CSC2143\Notepad\Notepad\obj\Debug\Notepad.pdb
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\bin\Debug\Notepad.exe.config
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\obj\Debug\Notepad.exe
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\obj\Debug\Notepad.pdb
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\bin\Debug\Notepad.exe
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\bin\Debug\Notepad.pdb
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\obj\Debug\Notepad.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\obj\Debug\Notepad.Form1.resources
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\Notepad-1\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache

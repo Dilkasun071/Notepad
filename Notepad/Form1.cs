@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Notepad
 {
@@ -28,7 +22,7 @@ namespace Notepad
             if (op.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.LoadFile(op.FileName, RichTextBoxStreamType.PlainText);
-                
+
             }
             this.Text = op.FileName;
 
@@ -81,7 +75,7 @@ namespace Notepad
         {
             FontDialog fd = new FontDialog();
             fd.Font = richTextBox1.SelectionFont;
-            if(fd.ShowDialog()==DialogResult.OK)
+            if (fd.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.SelectionFont = fd.Font;
             }
@@ -99,8 +93,86 @@ namespace Notepad
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Version 1.0.0\nCreated by Dimaya", "About Me",
-    MessageBoxButtons.YesNo,
+    MessageBoxButtons.OK, // OK button to dismis about (not yes no)
     MessageBoxIcon.Information);
+        }
+
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionFont != null)
+            {
+                System.Drawing.Font currentFont = richTextBox1.SelectionFont;
+                System.Drawing.FontStyle newFontStyle;
+
+                if (richTextBox1.SelectionFont.Bold == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Bold;
+                }
+
+                richTextBox1.SelectionFont = new Font(
+                   currentFont.FontFamily,
+                   currentFont.Size,
+                   newFontStyle
+                );
+            }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionFont != null)
+            {
+                System.Drawing.Font currentFont = richTextBox1.SelectionFont;
+                System.Drawing.FontStyle newFontStyle;
+
+                if (richTextBox1.SelectionFont.Italic == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Italic;
+                }
+
+                richTextBox1.SelectionFont = new Font(
+                   currentFont.FontFamily,
+                   currentFont.Size,
+                   newFontStyle
+                );
+            }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionFont != null)
+            {
+                System.Drawing.Font currentFont = richTextBox1.SelectionFont;
+                System.Drawing.FontStyle newFontStyle;
+
+                if (richTextBox1.SelectionFont.Underline == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Underline;
+                }
+
+                richTextBox1.SelectionFont = new Font(
+                   currentFont.FontFamily,
+                   currentFont.Size,
+                   newFontStyle
+                );
+            }
         }
     }
 }
+
